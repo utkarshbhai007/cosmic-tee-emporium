@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 @tailwind base;
@@ -35,6 +36,15 @@
     --ring: 280 75% 65%;
 
     --radius: 0.75rem;
+
+    /* Additional cosmic theme colors */
+    --cosmic-hero-red: 0 100% 67%;
+    --cosmic-hero-blue: 217 91% 60%;
+    --cosmic-hero-yellow: 47 95% 57%;
+    --cosmic-hero-green: 142 72% 50%;
+    --cosmic-purple: 269 80% 60%;
+    --cosmic-blue: 217 91% 60%;
+    --cosmic-yellow: 47 95% 57%;
   }
 }
 
@@ -81,4 +91,55 @@
   height: 100%;
   z-index: -1;
   overflow: hidden;
+}
+
+/* Animation classes */
+.animate-pulse-star {
+  animation: pulse-star 2s infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-comic-zoom {
+  animation: comic-zoom 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes pulse-star {
+  0% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-2deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(-5deg);
+  }
+}
+
+@keyframes comic-zoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

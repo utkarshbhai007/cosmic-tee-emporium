@@ -43,23 +43,23 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/new-arrivals" className="text-sm text-foreground/70 hover:text-primary transition-colors">
+                <Link to="/collections" className="text-sm text-foreground/70 hover:text-primary transition-colors">
+                  Collections
+                </Link>
+              </li>
+              <li>
+                <Link to="/products?sort=new" className="text-sm text-foreground/70 hover:text-primary transition-colors">
                   New Arrivals
                 </Link>
               </li>
               <li>
-                <Link to="/best-sellers" className="text-sm text-foreground/70 hover:text-primary transition-colors">
+                <Link to="/products?sort=bestseller" className="text-sm text-foreground/70 hover:text-primary transition-colors">
                   Best Sellers
                 </Link>
               </li>
               <li>
-                <Link to="/sale" className="text-sm text-foreground/70 hover:text-primary transition-colors">
+                <Link to="/products?sale=true" className="text-sm text-foreground/70 hover:text-primary transition-colors">
                   Sale
-                </Link>
-              </li>
-              <li>
-                <Link to="/gift-cards" className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                  Gift Cards
                 </Link>
               </li>
             </ul>
@@ -75,13 +75,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link to="/careers" className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                  Careers
+                <Link to="/about#team" className="text-sm text-foreground/70 hover:text-primary transition-colors">
+                  Our Team
                 </Link>
               </li>
               <li>
@@ -92,6 +87,11 @@ const Footer = () => {
               <li>
                 <Link to="/terms" className="text-sm text-foreground/70 hover:text-primary transition-colors">
                   Terms & Conditions
+                </Link>
+              </li>
+              <li>
+                <Link to="/privacy" className="text-sm text-foreground/70 hover:text-primary transition-colors">
+                  Privacy Policy
                 </Link>
               </li>
             </ul>
