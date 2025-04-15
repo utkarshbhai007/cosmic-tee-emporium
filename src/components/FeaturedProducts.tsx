@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
@@ -6,13 +5,12 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { ShoppingCart, Heart, Star } from 'lucide-react';
 
-// Sample product data (in a real app, this would come from an API)
 const featuredProducts = [
   {
     id: 1,
     name: 'Spider-Verse Tee',
     price: 29.99,
-    image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1583744946564-b52d01a7b321?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     category: 'Marvel',
     rating: 4.8,
     isNew: true,
@@ -22,7 +20,7 @@ const featuredProducts = [
     id: 2,
     name: 'Gotham Knight',
     price: 34.99,
-    image: 'https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     category: 'DC Comics',
     rating: 4.6,
     isNew: false,
@@ -32,7 +30,7 @@ const featuredProducts = [
     id: 3,
     name: 'Cosmic Galaxy',
     price: 27.99,
-    image: 'https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     category: 'Space',
     rating: 4.7,
     isNew: true,
@@ -42,7 +40,7 @@ const featuredProducts = [
     id: 4,
     name: 'Hero Academy',
     price: 32.99,
-    image: 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     category: 'Anime',
     rating: 4.9,
     isNew: false,
@@ -69,14 +67,12 @@ const FeaturedProducts = () => {
             <Link key={product.id} to={`/product/${product.id}`}>
               <Card className="cosmic-card group h-full flex flex-col overflow-hidden transition-all duration-300 hover:-translate-y-1">
                 <div className="relative aspect-[3/4] overflow-hidden">
-                  {/* Product Image */}
                   <img 
                     src={product.image} 
                     alt={product.name}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   
-                  {/* Badges */}
                   <div className="absolute top-2 left-2 flex flex-col gap-2">
                     {product.isNew && (
                       <Badge className="bg-cosmic-hero-blue text-white">New</Badge>
@@ -86,7 +82,6 @@ const FeaturedProducts = () => {
                     )}
                   </div>
                   
-                  {/* Quick actions */}
                   <div className="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex items-center justify-center">
                     <Button size="icon" variant="secondary" className="rounded-full mr-2">
                       <ShoppingCart className="h-4 w-4" />

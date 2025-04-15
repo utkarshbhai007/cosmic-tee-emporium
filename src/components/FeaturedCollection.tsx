@@ -12,11 +12,11 @@ const FeaturedCollection = () => {
           {/* Left Side - Image */}
           <div className="relative order-2 lg:order-1">
             <div className="comic-panel aspect-[4/5] p-1">
-              <div className="absolute inset-0 bg-gradient-to-br from-cosmic-hero-red/20 via-cosmic-hero-blue/20 to-cosmic-purple/20"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-cosmic-hero-blue/20 via-cosmic-hero-red/20 to-cosmic-purple/20"></div>
               
               <div className="relative h-full w-full overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1583744946564-b52d01a7b321?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  src="https://images.unsplash.com/photo-1612356689457-806f07e4ca8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="Limited edition superhero collection" 
                   className="h-full w-full object-cover"
                 />
